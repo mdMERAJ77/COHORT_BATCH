@@ -1,0 +1,24 @@
+body{
+    perspective: 700px;
+}
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: chacha 5s ease-in-out 1s both;
+    -webkit-animation: chacha 5s ease-in-out 1s both;
+}
+@keyframes chacha{
+    0%{
+        background-color: red;
+    }
+    30%{
+        background-color: green;
+    }
+    50%{
+        background-color: blue;
+    }
+    80%{
+        background-color: lightblue;
+    }
+} 

@@ -1,0 +1,9 @@
+#bg{
+    width: 300px;
+    height: 150px;
+    background-color: aqua;
+   box-shadow: 10px 10px 30px black;
+   padding: 50px;
+   box-sizing: content-box;
+   border: 1px solid red;
+}
