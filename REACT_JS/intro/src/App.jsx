@@ -108,26 +108,13 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [todos, settodos] = useState([
-    { id: 1, title: "Kaam krle bhai", isComplted: false },
-  ]);
-
-  const [title, settitle] = useState("");
   const [completed, setcompleted] = useState(false);
   const [gender, setgender] = useState("male");
   const [city, setcity] = useState("kolkata");
 
   return (
-    <div>
-      <h1>Create Task</h1>
-      <form>
-        <input
-          onChange={(e) => settitle(e.target.value)}
-          value={title}
-          type="text"
-          placeholder="title"
-        />
-        <br />
+    <>
+      <div>
         <input
           checked={completed}
           onChange={(e) => setcompleted(e.target.checked)}
@@ -145,8 +132,8 @@ const App = () => {
         <input
           value="female"
           onChange={(e) => setgender(e.target.value)}
-          checked={gender === "female"}
           type="radio"
+          checked={gender === "female"}
         />
         Female
         <br />
@@ -155,11 +142,8 @@ const App = () => {
           <option value="mumbai">Mumbai</option>
           <option value="kolkata">Kolkata</option>
         </select>
-        <br />
-        <br />
-        <button>Create Todo</button>
-      </form>
-    </div>
+      </div>
+    </>
   );
 };
 
